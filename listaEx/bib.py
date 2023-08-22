@@ -25,7 +25,7 @@ def gerarImpar(min,max):
     return b
 
 def mes(num):
-    if (num == 1):
+    if (num == 1): 
         return "Janeiro"
     elif (num == 2):
         return "Fevereiro"
@@ -68,3 +68,34 @@ def trapezio (baseMaior, baseMenor, altura):
 
     return ((baseMaior + baseMenor) * altura) / 2
     
+def fatorial(fat):
+    if fat == 1:
+        return 1
+    else:
+        res = fat * fatorial(fat-1)
+        return res
+    
+def vetorMaior(vetorM):
+    vetor = [0] * vetorM 
+    maiorNumero = 0
+    for i in range(0, len(vetor), 1):
+        vetor[i] = random.randint(1,100)
+    for i in range(0, len(vetor), 1):
+        if(vetor[i] > maiorNumero):
+            maiorNumero = vetor[i]
+        
+    print(f"Os valores do vetor foram: {vetor}")
+    return maiorNumero
+
+
+def vetorMenor(vetorMin):
+    vetor = [0] * vetorMin
+    menorNumero = 100
+    for i in range(0, len(vetor), 1):
+        vetor[i] = random.randint(1,100)
+    for i in range(0, len(vetor), 1):
+        if(vetor[i] < menorNumero):
+            menorNumero = vetor[i]
+        
+    print(f"Os valores do vetor foram: {vetor}")
+    return menorNumero
