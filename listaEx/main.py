@@ -55,3 +55,18 @@ while(True):
             baseMenor = bib.pedirNum()
             trap = bib.trapezio(baseMaior, baseMenor, altura)
             print(f"A área do trapézio é {trap}")
+        
+    if(op == 7):
+        fat = bib.pedirNum()
+        res = bib.fatorial(fat)
+        print(f"O fatorial de {fat} é: {res} ")
+            
+    if(op == 8):
+        vetorM = bib.pedirNum()
+        res = bib.vetorMaior(vetorM)
+        print(f"O maior valor gerado no vetor foi {res} ")
+
+    if(op == 9):
+        vetorMin = bib.pedirNum()
+        res = bib.vetorMenor(vetorMin)
+        print(f"O menor valor do vetor foi: {res} ")
