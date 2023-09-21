@@ -24,7 +24,7 @@ while(True):
     if(op == 4):
         bib.somaSalarios(nome)
 
-    if(op == 5):
+    if(op > 4):
         break
 
 # linha = arquivo.readlines()
