@@ -1,11 +1,3 @@
-def menu():
-    print("== Menu == ")
-    print("1. Inserir dados (no arquivo)")
-    print("2. Listar dados (todos)")
-    print("3. Buscar dados (pelo nome)")
-    print("4. Soma salários (no arquivo)")
-    op = int(input("Selecione uma opção: "))
-
 def inserirDados(nome):
 
     arquivo = open("nomes.txt", "a")
@@ -41,7 +33,7 @@ def listarDados(nome):
             print(f"Email: {dados[1]}")
             print(f"Salário: {dados[2]}")
             print(f"Data de nascimento: {dados[3]}")
-            print()  # Separar cada registro com uma linha em branco
+            print("---------------------------------")  # Separar cada registro com -----------
         
 
     arquivo.close()
