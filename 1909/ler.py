@@ -1,4 +1,4 @@
-import bib , os
+import escrever , os
 
 nome = input("Informe um nome pro arquivo: ")
 
@@ -12,33 +12,17 @@ while(True):
 
     os.system("cls")
     if(op == 1):
-        bib.inserirDados(nome)
+        escrever.inserirDados(nome)
     
     if(op == 2):
-        bib.listarDados(nome)
+        escrever.listarDados(nome)
 
     if(op == 3):
         procurar = input("Informe um nome à ser procurado: ")
-        bib.buscarDados(nome,procurar)
+        escrever.buscarDados(nome,procurar)
 
     if(op == 4):
-        bib.somaSalarios(nome)
+        escrever.somaSalarios(nome)
 
     if(op > 4):
         break
-
-# linha = arquivo.readlines()
-
-
-# for i in range (0, len(linha)):
-
-#     dados = linha[i].replace("\n", "")
-#     dados = dados.split(",")
-#     print(f"Nome: {dados[0]}")
-#     print(f"Email: {dados[1]}")
-#     print(f"Fone: {dados[2]}")
-#     print(f"Salário: {dados[3]}")
-
-#     print(linha[i].replace("\n" , "")) 
-
-# arquivo.close()
